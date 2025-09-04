@@ -1,3 +1,5 @@
+package Modelo.Enums;
+
 public enum Especie {
     PERRO(TipoAnimal.MAMIFERO),
     GATO(TipoAnimal.MAMIFERO),
