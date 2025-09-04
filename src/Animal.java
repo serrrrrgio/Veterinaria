@@ -1,14 +1,14 @@
 import java.time.LocalDate;
 
 public abstract class Animal {
-     public String idAnimal;
-     public String nombre;
-     public double peso;
-     public LocalDate fechaNacimiento;
-     public Especie especie;
-     public Boolean domestico;
-     public Cliente cliente;
-     public TipoAnimal tipoAnimal;
+    protected String idAnimal;
+    protected String nombre;
+    protected double peso;
+    protected LocalDate fechaNacimiento;
+    protected Especie especie;
+    protected Boolean domestico;
+    protected Cliente cliente;
+    protected TipoAnimal tipoAnimal;
 
     public Animal(String idAnimal, String nombre, double peso, LocalDate fechaNacimiento, Especie especie, Boolean domestico, Cliente cliente, TipoAnimal tipoAnimal) {
         this.idAnimal = idAnimal;

@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Cliente {
+public class Cliente extends Persona{
 
     private String idCliente;
     private String nombre;
