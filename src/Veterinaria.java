@@ -1,8 +1,8 @@
-public class Empresa {
+public class Veterinaria {
 
     private String nombre;
 
-    public Empresa(String nombre) {
+    public Veterinaria(String nombre) {
         this.nombre = nombre;
     }
 }
