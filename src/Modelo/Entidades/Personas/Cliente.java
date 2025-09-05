@@ -4,25 +4,16 @@ import java.time.LocalDate;
 
 public class Cliente extends Persona {
 
-    private String idCliente;
     private LocalDate fechaRegistro;
+    private int nivelFidelidad;
 
-    public Cliente(String idCliente, String nombre, String direccion, String telefono,
-                   String email, LocalDate fechaRegistro) {
+    public Cliente(String id, String nombre, String direccion, String telefono,
+                   String email, LocalDate fechaRegistro, int nivelFidelidad) {
 
-        super(nombre, direccion, telefono, email);
+        super(id, nombre, direccion, telefono, email);
 
-        this.idCliente = idCliente;
         this.fechaRegistro = fechaRegistro;
-    }
-
-
-    public String getIdCliente() {
-        return idCliente;
-    }
-
-    public void setIdCliente(String idCliente) {
-        this.idCliente = idCliente;
+        this.nivelFidelidad = nivelFidelidad;
     }
 
     public LocalDate getFechaRegistro() {
@@ -31,5 +22,13 @@ public class Cliente extends Persona {
 
     public void setFechaRegistro(LocalDate fechaRegistro) {
         this.fechaRegistro = fechaRegistro;
+    }
+
+    public int getNivelFidelidad() {
+        return nivelFidelidad;
+    }
+
+    public void setNivelFidelidad(int nivelFidelidad) {
+        this.nivelFidelidad = nivelFidelidad;
     }
 }

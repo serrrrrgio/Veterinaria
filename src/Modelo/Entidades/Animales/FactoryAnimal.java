@@ -1,7 +1,10 @@
-import Modelo.Entidades.Animales.*;
+package Modelo.Entidades.Animales;
+
 import Modelo.Entidades.Personas.Cliente;
+import Modelo.Entidades.Veterinaria;
 import Modelo.Enums.Especie;
 import Modelo.Enums.TipoAnimal;
+import Servicios.VeterinariaServicios;
 
 import java.time.LocalDate;
 import java.util.Map;
@@ -14,9 +17,14 @@ public class FactoryAnimal {
                                      LocalDate fechaNacimiento,
                                      Especie especie,
                                      boolean domestico,
-                                     Cliente cliente,
+                                     String idCliente,
                                      TipoAnimal tipoAnimal,
                                      Map<String, Object> atributosClase) {
+
+        Cliente cliente = VeterinariaServicios.buscarClienteId(idCliente);
+        if (cliente == null) {
+            throw new IllegalArgumentException("No existe un cliente con el id: " + idCliente);
+        }
 
         switch (tipoAnimal){
             case MAMIFERO :
