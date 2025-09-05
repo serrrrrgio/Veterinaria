@@ -1,7 +1,6 @@
 package Modelo.Entidades.Animales;
 
 import Modelo.Entidades.Personas.Cliente;
-import Modelo.Entidades.Veterinaria;
 import Modelo.Enums.Especie;
 import Modelo.Enums.TipoAnimal;
 import Servicios.VeterinariaServicios;
