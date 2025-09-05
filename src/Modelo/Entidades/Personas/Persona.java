@@ -8,13 +8,52 @@ public abstract class Persona {
     protected String telefono;
     protected String email;
 
-    public Persona(String id, String nombre, String direccion, String telefono, String email) {
+    public Persona(Builder<?> builder) {
 
-        this.id = id;
-        this.nombre = nombre;
-        this.direccion = direccion;
-        this.telefono = telefono;
-        this.email = email;
+        this.id = builder.id;
+        this.nombre = builder.nombre;
+        this.direccion = builder.direccion;
+        this.telefono = builder.telefono;
+        this.email = builder.email;
+    }
+
+    public static abstract class Builder<T extends Builder<T>>{
+
+        protected String id;
+        protected String nombre;
+        protected String direccion;
+        protected String telefono;
+        protected String email;
+
+        public T id(String id) {
+            this.id = id;
+            return self();
+        }
+
+        public T nombre(String nombre) {
+            this.nombre = nombre;
+            return self();
+        }
+
+        public T direccion(String direccion) {
+            this.direccion = direccion;
+            return self();
+        }
+
+        public T telefono(String telefono) {
+            this.telefono = telefono;
+            return self();
+        }
+
+        public T email(String email) {
+            this.email = email;
+            return self();
+        }
+
+        protected abstract T self();
+
+        public abstract Persona build();
+
     }
 
 

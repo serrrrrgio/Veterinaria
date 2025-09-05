@@ -1,15 +1,43 @@
 package Modelo.Entidades.Personas;
 
+import java.time.LocalDate;
+
 public class Veterinario extends Persona{
 
     private String especialidad;
     private int anosExperiencia;
 
-    public Veterinario(String id, String nombre, String direccion,
-                       String telefono, String email, String especialidad, int anosExperiencia) {
-        super(id, nombre, direccion, telefono, email);
-        this.especialidad = especialidad;
-        this.anosExperiencia = anosExperiencia;
+    public Veterinario(Builder builder) {
+        super(builder);
+        this.especialidad = builder.especialidad;
+        this.anosExperiencia = builder.anosExperiencia;
+    }
+
+    public static class Builder extends Persona.Builder<Builder>{
+
+        private String especialidad;
+        private int anosExperiencia;
+
+        public Builder especialidad(String especialidad) {
+            this.especialidad = especialidad;
+            return this;
+        }
+
+        public Builder anosExperiencia(int anosExperiencia) {
+            this.anosExperiencia = anosExperiencia;
+            return this;
+        }
+
+        @Override
+        protected Builder self(){
+            return this;
+        }
+
+        @Override
+        public Persona build(){
+            return new Veterinario(this);
+        }
+
     }
 
 
