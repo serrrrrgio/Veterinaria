@@ -3,5 +3,7 @@ package Modelo.Enums;
 public enum TipoAnimal {
     MAMIFERO,
     AVE,
-    REPTIL
+    REPTIL,
+    ANFIBIO,
+    PEZ
 }

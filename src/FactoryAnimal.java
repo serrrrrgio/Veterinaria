@@ -60,6 +60,34 @@ public class FactoryAnimal {
                         .temperaturaCorporalOptima((double) atributosClase.get("temperaturaCorporalOptima"))
                         .build();
 
+            case ANFIBIO :
+                return new Anfibio.Builder().
+                        idAnimal(idAnimal)
+                        .nombre(nombre)
+                        .peso(peso)
+                        .fechaNacimiento(fechaNacimiento)
+                        .especie(especie)
+                        .domestico(domestico)
+                        .cliente(cliente)
+                        .tipoAnimal(tipoAnimal)
+                        .esVenenoso((boolean) atributosClase.get("esVenenoso"))
+                        .habitat ((String) atributosClase.get("habitat"))
+                        .build();
+
+            case PEZ :
+                return new Pez.Builder().
+                        idAnimal(idAnimal)
+                        .nombre(nombre)
+                        .peso(peso)
+                        .fechaNacimiento(fechaNacimiento)
+                        .especie(especie)
+                        .domestico(domestico)
+                        .cliente(cliente)
+                        .tipoAnimal(tipoAnimal)
+                        .tipoAgua((String) atributosClase.get("tipoAgua"))
+                        .tamanoMaximo ((double) atributosClase.get("tamanoMaximo"))
+                        .build();
+
             default:
                 throw new IllegalArgumentException("Tipo de animal no soportado: " + tipoAnimal);
         }
