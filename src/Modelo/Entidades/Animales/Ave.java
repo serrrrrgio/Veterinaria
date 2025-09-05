@@ -1,9 +1,7 @@
 package Modelo.Entidades.Animales;
 
 
-import Modelo.Interfaces.IAnimal;
-
-public class Ave extends Animal implements IAnimal {
+public class Ave extends Animal{
 
     private double envergadura;
     private String tipoPico;

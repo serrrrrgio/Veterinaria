@@ -1,8 +1,7 @@
 package Modelo.Entidades.Animales;
 
-import Modelo.Interfaces.IAnimal;
 
-public class Pez extends Animal implements IAnimal {
+public class Pez extends Animal{
 
     private String tipoAgua;
     private double tamanoMaximo;

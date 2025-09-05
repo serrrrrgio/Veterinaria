@@ -1,7 +1,6 @@
 package Modelo.Entidades.Animales;
-import Modelo.Interfaces.IAnimal;
 
-public class Anfibio extends Animal implements IAnimal {
+public class Anfibio extends Animal  {
 
     private boolean esVenenoso;
     private String habitat;

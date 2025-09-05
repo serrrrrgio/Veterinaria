@@ -1,8 +1,7 @@
 package Modelo.Entidades.Animales;
 
-import Modelo.Interfaces.IAnimal;
 
-public class Mamifero extends Animal implements IAnimal {
+public class Mamifero extends Animal{
 
     private String tipoPelaje;
     private int numeroCriasCamada;
