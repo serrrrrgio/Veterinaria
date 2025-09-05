@@ -1,6 +1,6 @@
 package Modelo.Entidades.Personas;
 
-import java.time.LocalDate;
+
 
 public class Veterinario extends Persona{
 
@@ -45,8 +45,8 @@ public class Veterinario extends Persona{
         return anosExperiencia;
     }
 
-    public void setAnosExperiencia(int aniosExperiencia) {
-        this.anosExperiencia = aniosExperiencia;
+    public void setAnosExperiencia(int anosExperiencia) {
+        this.anosExperiencia = anosExperiencia;
     }
 
     public String getEspecialidad() {
