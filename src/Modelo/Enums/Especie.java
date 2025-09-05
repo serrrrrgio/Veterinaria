@@ -1,25 +1,61 @@
 package Modelo.Enums;
 
 public enum Especie {
+
+    // Mamíferos
+
     PERRO(TipoAnimal.MAMIFERO),
     GATO(TipoAnimal.MAMIFERO),
     CABALLO(TipoAnimal.MAMIFERO),
-    ELEFANTE(TipoAnimal.MAMIFERO),
-    MURCIELAGO(TipoAnimal.MAMIFERO),
+    VACA(TipoAnimal.MAMIFERO),
+    CERDO(TipoAnimal.MAMIFERO),
+    OVEJA(TipoAnimal.MAMIFERO),
+    CABRA(TipoAnimal.MAMIFERO),
+    CONEJO(TipoAnimal.MAMIFERO),
+    HURON(TipoAnimal.MAMIFERO),
+    COBAYA(TipoAnimal.MAMIFERO),
+    RATON(TipoAnimal.MAMIFERO),
+    CHINCHILLA(TipoAnimal.MAMIFERO),
+
+    // Aves
+
+    CANARIO(TipoAnimal.AVE),
+    PERIQUITO(TipoAnimal.AVE),
+    LORO(TipoAnimal.AVE),
+    GALLINA(TipoAnimal.AVE),
+    PATO(TipoAnimal.AVE),
+    GANSO(TipoAnimal.AVE),
+    PAVO(TipoAnimal.AVE),
+
+    // Peces
+
+    PEZ(TipoAnimal.PEZ),
+    GOLDEN_FISH(TipoAnimal.PEZ),
+    NEON(TipoAnimal.PEZ),
+    BETTA(TipoAnimal.PEZ),
+    GUPPY(TipoAnimal.PEZ),
+
+    // Reptiles
 
     TORTUGA(TipoAnimal.REPTIL),
     IGUANA(TipoAnimal.REPTIL),
-    COCODRILO(TipoAnimal.REPTIL),
-    SERPIENTE(TipoAnimal.REPTIL),
+    SERPIENTE_NO_PELIGROSA(TipoAnimal.REPTIL),
+    CAMARON(TipoAnimal.REPTIL),  // si quieres reptiles acuáticos simples
 
-    LORO(TipoAnimal.AVE),
-    AGUILA(TipoAnimal.AVE),
-    PINGÜINO(TipoAnimal.AVE),
-    BUHO(TipoAnimal.AVE);
+    // Anfibios
+
+    RANA(TipoAnimal.ANFIBIO),
+    SAPO(TipoAnimal.ANFIBIO),
+    SALAMANDRA(TipoAnimal.ANFIBIO);
+
 
     private final TipoAnimal tipo;
 
     Especie(TipoAnimal tipo) {
         this.tipo = tipo;
+    }
+
+    public TipoAnimal getTipo() {
+        return tipo;
     }
 }

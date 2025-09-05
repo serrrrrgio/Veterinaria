@@ -1,14 +1,14 @@
 package Modelo.Entidades.Personas;
 
-
-
 public class Veterinario extends Persona{
 
     private String especialidad;
     private int anosExperiencia;
 
     public Veterinario(Builder builder) {
+
         super(builder);
+
         this.especialidad = builder.especialidad;
         this.anosExperiencia = builder.anosExperiencia;
     }
@@ -34,7 +34,7 @@ public class Veterinario extends Persona{
         }
 
         @Override
-        public Persona build(){
+        public Veterinario build(){
             return new Veterinario(this);
         }
 
