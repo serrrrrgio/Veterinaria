@@ -3,7 +3,6 @@ package Modelo.Entidades;
 import Modelo.Entidades.Animales.Animal;
 import Modelo.Entidades.Animales.FactoryAnimal;
 import Modelo.Entidades.Personas.Cliente;
-import Modelo.Entidades.Personas.Persona;
 import Modelo.Entidades.Personas.Veterinario;
 import Modelo.Enums.Especie;
 import Modelo.Enums.TipoAnimal;

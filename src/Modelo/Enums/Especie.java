@@ -34,13 +34,13 @@ public enum Especie {
     NEON(TipoAnimal.PEZ),
     BETTA(TipoAnimal.PEZ),
     GUPPY(TipoAnimal.PEZ),
+    CAMARON(TipoAnimal.PEZ),
 
     // Reptiles
 
     TORTUGA(TipoAnimal.REPTIL),
     IGUANA(TipoAnimal.REPTIL),
     SERPIENTE_NO_PELIGROSA(TipoAnimal.REPTIL),
-    CAMARON(TipoAnimal.REPTIL),  // si quieres reptiles acuáticos simples
 
     // Anfibios
 
